@@ -13,7 +13,6 @@ build(
 	build.mode=static
 	build.compiler=g++
 	build.cflags=("-O2" "-Wall")
-	build.dependencies=("syshit@1.0.1")
 	build.include-directory="include/"
-	build.source-files=("source/platform.cpp" "source/foo.cpp")
+	build.source-files=("source/platform.cpp" ,"source/foo.cpp")
 )

@@ -1,0 +1,19 @@
+# @library
+library(
+	library.name=platform
+	library.description="platform for c++"
+	library.version=1.0.8
+
+	library.authors=("Rudolf Mueller")
+	library.license="MIT"
+	library.websites=("https://rudolfmuller.github.io/clibx-package-manager/", "https://github.com/rudolfmuller/platform-lib/")
+)
+
+build(
+	build.mode=static
+	build.compiler=g++
+	build.cflags=("-O2" "-Wall")
+	build.dependencies=("syshit@1.0.1")
+	build.include-directory="include/"
+	build.source-files=("source/platform.cpp" "source/foo.cpp")
+)
